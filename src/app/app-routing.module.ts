@@ -10,6 +10,7 @@ import { SellerEditProductComponent } from './seller-edit-product/seller-edit-pr
 import { SellerProductListComponent } from "./seller-product-list/seller-product-list.component";
 import { SellerLoginComponent } from "./seller-login/seller-login.component";
 import { ViewcartComponent } from "./viewcart/viewcart.component";
+import { SellerOrdersComponent } from "./seller-orders/seller-orders.component";
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'sellerproductlist', component:SellerProductListComponent},
   {path:'sellerlogin', component:SellerLoginComponent},
   {path:'viewcart', component:ViewcartComponent},
+  {path:'sellerorders', component:SellerOrdersComponent},
   {path:'', component:LoginComponent, pathMatch:'full'},
   {path:'**', redirectTo:''}
 ];

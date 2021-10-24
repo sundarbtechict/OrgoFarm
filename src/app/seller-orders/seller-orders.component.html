@@ -1,0 +1,23 @@
+<div class="products container">
+    <div class="products-title">Customer Ordered Products</div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Order ID</th>
+            <th>Product ID</th>
+            <th>Ordered Date</th>
+            <th>Scale</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list">
+            <td>{{item['orderId']}}</td>
+            <td>{{item['productId']}}</td>
+            <td>{{item['orderedDate'] | date:"short"}}</td>
+            <td>{{item['scale']}}</td>
+            <td>{{item['quantity']}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>

@@ -17,6 +17,7 @@ import { SellerEditProductComponent } from './seller-edit-product/seller-edit-pr
 import { SellerProductListComponent } from './seller-product-list/seller-product-list.component';
 import { SellerLoginComponent } from './seller-login/seller-login.component';
 import { ViewcartComponent } from './viewcart/viewcart.component';
+import { SellerOrdersComponent } from './seller-orders/seller-orders.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ViewcartComponent } from './viewcart/viewcart.component';
     SellerEditProductComponent,
     SellerProductListComponent,
     SellerLoginComponent,
-    ViewcartComponent
+    ViewcartComponent,
+    SellerOrdersComponent
   ],
   imports: [
     BrowserModule,
