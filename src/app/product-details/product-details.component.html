@@ -1,0 +1,25 @@
+<div class="row product">
+    <div class="col-sm-5 product-image">
+        <img src="../../assets/img/carrot.jpg" alt="">
+    </div>
+    <div class="col-sm-7 product-details">
+        <div class="product-title">
+            <h2>{{product['productName']}}</h2>
+        </div>
+        <div class="product-price">
+            <p><span>Rs. {{product['price']}} </span>/ {{product['scale']}}</p>
+        </div>
+        <div class="product-action">
+            <div class="input-group">
+            <button class="btn" type="button">-</button>
+            <input id="qty" type="text" class="form-control" name="qty" value="3" disabled>
+            <button class="btn" type="button">+</button>
+        </div>
+            <button class="btn addto"> Add to Cart</button>
+        </div>
+        <div class="product-desc">
+            <p>{{product['pdtDescription']}}</p>
+        </div>
+        
+    </div>
+</div>

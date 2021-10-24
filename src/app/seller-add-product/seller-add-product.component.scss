@@ -1,0 +1,31 @@
+.product {
+  margin: 12vh;
+  &-create {
+    border: 1px ridge black;
+    border-radius: 3px;
+    width: 50vw;
+    text-align: center;
+    margin: 10vh auto;
+    padding: 20px;
+  }
+  .form {
+    &-inplace {
+      text-align: left;
+      display: inline-flex;
+      margin: 10px 0;
+      width: 90%;
+
+      label {
+        width: 30%;
+        font-weight: 500;
+        font-size: 16px;
+        margin-right: 10px;
+      }
+      input,
+      select,
+      textarea {
+        width: 70%;
+      }
+    }
+  }
+}

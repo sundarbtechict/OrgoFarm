@@ -1,0 +1,14 @@
+<div class="categories">
+    <div class="sub-title">
+        <h2>Categories</h2>
+    </div>
+    <div class="row">
+        <div *ngFor="let item of list" class="col-sm-3">
+            <a [routerLink]="['/products/',item['id'], item['value']]">
+            <div class="card bg-light category">
+                <div class="card-body">{{item['value']}}</div>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>

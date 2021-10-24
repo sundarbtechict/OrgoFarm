@@ -1,0 +1,37 @@
+<div class="product">
+    <div class="product-create">
+        <form>
+            <h3>Enter details here</h3>
+            <div class="form-inplace">
+                <label>Product Name :</label>
+                <input type="text" name="name" class="form-control" [(ngModel)]="product['name']">
+            </div>
+
+            <div class="form-inplace">
+                <label>Product Price :</label>
+                <input type="text" name="price" class="form-control" [(ngModel)]="product['price']">
+            </div>
+            <div class="form-inplace">
+                <label>Product Scale :</label>
+                <input type="text" name="scale" class="form-control" [(ngModel)]="product['scale']">
+            </div>
+            <div class="form-inplace">
+                <label>Product Quantity :</label>
+                <input type="text" name="quantitiy" class="form-control" [(ngModel)]="product['quantitiy']">
+            </div>
+            <div class="form-inplace">
+                <label>Product Category :</label>
+                <select name="category" class="form-select" [(ngModel)]="product['category']">
+                    <option value="1"></option>
+                    </select>
+            </div>
+            <div class="form-inplace">
+                <label>Product Description :</label>
+                <textarea rows="3" name="desc" class="form-control" [(ngModel)]="product['desc']"></textarea>
+            </div>
+            <div class="action">
+                <button class="btn btn-primary" (click)="onCreate()">create</button>
+            </div>
+        </form>
+    </div>
+</div>
