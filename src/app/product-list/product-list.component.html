@@ -6,7 +6,7 @@
         <div *ngFor="let item of list" class="col-sm-3">
           <a [routerLink]="['/product/',item['productId']]">
             <div class="card product">
-                <img class="card-img-top" height="200"
+                <img class="card-img-top" height="200" width="280"
                 [src]="images[item['productId']]?images[item['productId']]:images['default']" alt="Card image">
                 <div class="card-body">
                   <h4 class="card-title">{{item['productName']}}</h4>

@@ -8,6 +8,18 @@ export const images:any = {
     "PRODUCT_5":"./../../assets/img/Mango_PRODUCT_5.jpeg",
     "PRODUCT_1":"./../../assets/img/Potato_PRODUCT_1.jpg",
     "PRODUCT_2":"./../../assets/img/Spinach_PRODUCT_2.jpg",
+    "PRODUCT_21":"./../../assets/img/Paneer_PRODUCT_21.jpg",
+    "PRODUCT_20":"./../../assets/img/Curd_PRODUCT_20.jpg",
+    "PRODUCT_19":"./../../assets/img/Milk_PRODUCT_19.jpg",
+    "PRODUCT_18":"./../../assets/img/Walnut_PRODUCT_18.jpg",
+    "PRODUCT_17":"./../../assets/img/Raisin_PRODUCT_17.jpg",
+    "PRODUCT_16":"./../../assets/img/Almond_PRODUCT_16.jpg",
+    "PRODUCT_15":"./../../assets/img/Cashew_PRODUCT_15.jpg",
+    "PRODUCT_14":"./../../assets/img/Papaya_PRODUCT_14.jpg",
+    "PRODUCT_13":"./../../assets/img/KiwiGreen_PRODUCT_13.jpg",
+    "PRODUCT_12":"./../../assets/img/Oranges_PRODUCT_12.jpg",
+    "PRODUCT_11":"./../../assets/img/Dates_PRODUCT_11.jpg",
+    "PRODUCT_10":"./../../assets/img/GreenApple_PRODUCT_10.jpg",
     "default":"./../../assets/img/default.jpg"
 
 }
