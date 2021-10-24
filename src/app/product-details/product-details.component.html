@@ -5,17 +5,18 @@
     <div class="col-sm-7 product-details">
         <div class="product-title">
             <h2>{{product['productName']}}</h2>
+            <button class="btn back" (click)="back()"> Back</button>
         </div>
         <div class="product-price">
             <p><span>Rs. {{product['price']}} </span>/ {{product['scale']}}</p>
         </div>
         <div class="product-action">
             <div class="input-group">
-            <button class="btn" type="button">-</button>
-            <input id="qty" type="text" class="form-control" name="qty" value="3" disabled>
-            <button class="btn" type="button">+</button>
+            <button class="btn" type="button" (click)="sub()">-</button>
+            <input id="qty" type="text" class="form-control" name="qty" disabled [(ngModel)]="qty">
+            <button class="btn" type="button" (click)="add()">+</button>
         </div>
-            <button class="btn addto"> Add to Cart</button>
+            <button class="btn addto" (click)="addtocart()"> Add to Cart</button>
         </div>
         <div class="product-desc">
             <p>{{product['pdtDescription']}}</p>

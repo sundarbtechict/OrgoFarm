@@ -31,6 +31,11 @@ export class ProductListComponent implements OnInit {
       }
     )
   }
+  addtocart(product:any, qty:any){
+      let cart = JSON.parse(localStorage.getItem('cart')|| '{}');
+      cart[product['productId']]={ product:product,qty:qty };
+      localStorage.setItem('cart', JSON.stringify(cart))
+  }
 
 
 }

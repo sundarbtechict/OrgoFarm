@@ -1,0 +1,39 @@
+<div class="products container">
+    <div *ngIf="isSuccess" class="alert alert-success">
+        <strong>Success!</strong> {{msg}}
+      </div>
+    <div *ngIf="!isSuccess" class="products-title">List of yours Products</div>
+    <table *ngIf="!isSuccess" class="table">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Scale</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of list; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{item['productName']}}</td>
+            <td>{{item['price']}}</td>
+            <td>{{item['scale']}}</td>
+            <td>{{item['qty']}}</td>
+            <td><span>{{item['amount']}}</span></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td><span>Total :</span></td>
+              <td><span>{{totalAmount}}</span></td>
+          </tr>
+        </tbody>
+    </table>
+    <div *ngIf="!isSuccess" class="action">
+        <button class="btn" (click)="placeOrder()"> Place An Order </button>
+    </div>
+</div>

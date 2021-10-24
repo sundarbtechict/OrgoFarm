@@ -1,5 +1,11 @@
 <nav class="navbar fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">OrgoFarm</a>
+      <span *ngIf="isUser" class="left-side">
+        <span class="navbar-text">Welcome : {{username}}</span>
+        <a href="/viewcart" class="btn btn-success" type="button">View Cart</a>
+
+        <button class="btn btn-success" type="button" (click)="logout()">Log out</button>
+      </span>
     </div>
   </nav>

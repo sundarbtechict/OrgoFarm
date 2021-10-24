@@ -13,6 +13,14 @@
   &-title {
     border-bottom: 0.5px dotted #212529;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    button.back {
+      background-color: #212529;
+      color: whitesmoke;
+      padding: 0px 10px;
+      height: 36px;
+    }
   }
   &-desc {
     p {
