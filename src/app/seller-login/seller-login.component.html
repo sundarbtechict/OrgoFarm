@@ -1,0 +1,20 @@
+<div class="row login">
+    <div class="col-sm-4">
+        <div class="login-block">
+            <form>
+                <div class="title">Seller Login Here</div>
+                <div class="form-inplace">
+                    <label>Usernname</label>
+                    <input type="text" name="Usernname" class="form-control" [(ngModel)]="username">
+                </div>
+                <div class="form-inplace">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" [(ngModel)]="password">
+                </div>
+                <div class="action">
+                    <button class="btn btn-primary" (click)="onLogin()">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

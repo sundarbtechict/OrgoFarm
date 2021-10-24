@@ -14,6 +14,8 @@ import { CategoryListComponent } from './category-list/category-list.component';
 import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerEditProductComponent } from './seller-edit-product/seller-edit-product.component';
+import { SellerProductListComponent } from './seller-product-list/seller-product-list.component';
+import { SellerLoginComponent } from './seller-login/seller-login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { SellerEditProductComponent } from './seller-edit-product/seller-edit-pr
     CategoryListComponent,
     SellerDashboardComponent,
     SellerAddProductComponent,
-    SellerEditProductComponent
+    SellerEditProductComponent,
+    SellerProductListComponent,
+    SellerLoginComponent
   ],
   imports: [
     BrowserModule,
