@@ -6,4 +6,13 @@
     font-weight: 600;
     margin-bottom: 20px;
   }
+  td {
+    span {
+      background-color: limegreen;
+      padding: 2px 15px 4px;
+      border: 1px solid;
+      border-radius: 15px;
+      color: white;
+    }
+  }
 }
