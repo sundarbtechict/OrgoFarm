@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute } from '@angular/router';
 import { SharedService } from '../shared.service';
 import { Router } from '@angular/router';
-
+import { images } from '../image';
 
 @Component({
   selector: 'app-product-list',
@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class ProductListComponent implements OnInit {
   categoryId:any;
   list:any=[];
+  images = images;
   categoryValue:any;
   constructor(private activatedRoute: ActivatedRoute,private sharedService:SharedService,
     private router: Router) { }

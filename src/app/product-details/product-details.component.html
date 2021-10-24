@@ -1,6 +1,6 @@
 <div class="row product">
     <div class="col-sm-5 product-image">
-        <img src="../../assets/img/carrot.jpg" alt="">
+        <img [src]="images[product['productId']]?images[product['productId']]:images['default']" alt="">
     </div>
     <div class="col-sm-7 product-details">
         <div class="product-title">

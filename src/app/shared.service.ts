@@ -15,6 +15,11 @@ export class SharedService {
     const url = this.serviceAddress + methodName;
     return this.http.post(url, Input)
   }
+
+  putData(methodName:any, Input:any) {
+    const url = this.serviceAddress + methodName;
+    return this.http.put(url, Input)
+  }
   
   getData(methodName:any) {
     const url = this.serviceAddress + methodName;

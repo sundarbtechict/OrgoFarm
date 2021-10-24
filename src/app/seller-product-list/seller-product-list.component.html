@@ -8,8 +8,7 @@
             <th>Scale</th>
             <th>Quantity</th>
             <th>Available</th>
-            <th></th>
-            <th></th>
+            <th>Action</th>
           </tr>
         </thead>
         <tbody>
@@ -19,8 +18,7 @@
             <td>{{item['scale']}}</td>
             <td>{{item['qtyInStock']}}</td>
             <td>{{item['isInStock']?'Yes':'No'}}</td>
-            <td></td>
-            <td></td>
+            <td><a [routerLink]="['/sellereditprodcut',item['productId']]">Edit</a></td>
           </tr>
         </tbody>
     </table>

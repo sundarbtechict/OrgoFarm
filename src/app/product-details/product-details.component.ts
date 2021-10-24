@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'
 import { SharedService } from '../shared.service';
 import { Router } from '@angular/router';
+import { images } from '../image';
 
 @Component({
   selector: 'app-product-details',
@@ -10,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class ProductDetailsComponent implements OnInit {
   productId:any;
+  images = images;
+
   product:any={};
   constructor(private activatedRoute: ActivatedRoute,private sharedService:SharedService,
     private router: Router) { }

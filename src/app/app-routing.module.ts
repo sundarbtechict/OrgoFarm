@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'categories', component:CategoryListComponent},
   {path:'sellerdashboard', component:SellerDashboardComponent},
   {path:'selleraddprodcut', component:SellerAddProductComponent},
-  {path:'sellereditprodcut', component:SellerEditProductComponent},
+  {path:'sellereditprodcut/:productId', component:SellerEditProductComponent},
   {path:'sellerproductlist', component:SellerProductListComponent},
   {path:'sellerlogin', component:SellerLoginComponent},
   {path:'', component:LoginComponent, pathMatch:'full'},

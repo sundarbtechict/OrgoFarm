@@ -1,10 +1,13 @@
 <div class="product">
     <div class="product-create">
         <form>
+            <div *ngIf="isSuccess" class="alert alert-success">
+                <strong>Success!</strong> {{msg}}
+              </div>
             <h3>Enter details here</h3>
             <div class="form-inplace">
                 <label>Product Name :</label>
-                <input type="text" name="name" class="form-control" [(ngModel)]="product['name']">
+                <input type="text" name="name" class="form-control" [(ngModel)]="product['productName']">
             </div>
 
             <div class="form-inplace">
@@ -17,17 +20,17 @@
             </div>
             <div class="form-inplace">
                 <label>Product Quantity :</label>
-                <input type="text" name="quantitiy" class="form-control" [(ngModel)]="product['quantitiy']">
+                <input type="text" name="quantitiy" class="form-control" [(ngModel)]="product['qtyInStock']">
             </div>
             <div class="form-inplace">
                 <label>Product Category :</label>
-                <select name="category" class="form-select" [(ngModel)]="product['category']">
-                    <option value="1"></option>
+                <select name="category" class="form-select" [(ngModel)]="product['categoryId']">
+                    <option *ngFor="let item of categories" [value]="item['id']">{{item['value']}}</option>
                     </select>
             </div>
             <div class="form-inplace">
                 <label>Product Description :</label>
-                <textarea rows="3" name="desc" class="form-control" [(ngModel)]="product['desc']"></textarea>
+                <textarea rows="3" name="desc" class="form-control" [(ngModel)]="product['pdtDescription']"></textarea>
             </div>
             <div class="action">
                 <button class="btn btn-primary" (click)="onCreate()">create</button>
